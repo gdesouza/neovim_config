@@ -30,3 +30,14 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- Marp
+vim.keymap.set("n", "<leader>mt", "<cmd>MarpToggle<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>ms", "<cmd>MarpStatus<cr>", { noremap = true, silent = true })
+
+-- Toggle markdown preview
+vim.keymap.set('n', '<leader>p', '<cmd>MarkdownPreviewToggle<cr>', {
+  desc = 'Toggle Markdown Preview',
+  noremap = true,
+  silent = true,
+})
