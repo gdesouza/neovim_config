@@ -41,3 +41,16 @@ vim.keymap.set('n', '<leader>p', '<cmd>MarkdownPreviewToggle<cr>', {
   noremap = true,
   silent = true,
 })
+
+-- Set background
+vim.keymap.set('n', '<leader>bd', ':set background=dark<cr>', {
+  desc = 'Set Background Dark',
+  noremap = true,
+  silent = true,
+})
+
+vim.keymap.set('n', '<leader>bl', ':set background=light<cr>', {
+  desc = 'Set Background Light',
+  noremap = true,
+  silent = true,
+})

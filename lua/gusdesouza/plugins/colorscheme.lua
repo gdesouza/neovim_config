@@ -1,23 +1,26 @@
 return {
   {
-    "folke/tokyonight.nvim",
-    priority = 1000, -- make sure to load this before all the other start plugins
+    "catppuccin/nvim",
     config = function()
-
-      require("tokyonight").setup({
+      require("catppuccin").setup({
+        lazy = false,
+        priority = 1000,
       })
-      -- load the colorscheme here
-      local theme_file = vim.fn.expand("~/.config/nvim/theme")
-      local f = io.open(theme_file, "r")
-      local theme = "tokyonight-day"
-      if f then
-        local line = f:read("*l")
-        f:close()
-        if line and #line > 0 then
-          theme = line
-        end
-      end
-      vim.cmd("colorscheme " .. theme)
+      vim.cmd([[colorscheme catppuccin]])
     end,
   },
 }
+
+-- return {
+--   {
+--     "folke/tokyonight.nvim",
+--     config = function()
+--       require("tokyonight").setup({
+--         lazy = false,
+--         priority = 1000,
+--         opts = {},
+--       })
+--       vim.cmd([[colorscheme tokyonight-night]])
+--     end,
+--   },
+-- }
