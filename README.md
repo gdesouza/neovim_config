@@ -21,6 +21,55 @@ Open Neovim with this config:
 NVIM_APPNAME=gdesouza/neovim_config/ nvim
 ```
 
+## Key Bindings
+
+### Leader Key
+- Leader key is set to `<Space>`
+
+### General
+- `jk` - Exit insert mode
+- `<leader>nh` - Clear search highlights
+- `<leader>+` / `<leader>-` - Increment/decrement numbers
+
+### Window Management
+- `<leader>sv` - Split window vertically
+- `<leader>sh` - Split window horizontally
+- `<leader>se` - Make splits equal size
+- `<leader>sx` - Close current split
+- `<leader>sm` - Maximize/minimize split
+
+### Tab Management
+- `<leader>to` - Open new tab
+- `<leader>tx` - Close current tab
+- `<leader>tn` / `<leader>tp` - Navigate tabs
+- `<leader>tf` - Open current buffer in new tab
+
+### File Explorer (Nvim-tree)
+- `<leader>ee` - Toggle file explorer
+- `<leader>ef` - Toggle file explorer on current file
+- `<leader>ec` - Collapse file explorer
+- `<leader>er` - Refresh file explorer
+
+### Telescope (Fuzzy Finder)
+- `<leader>ff` - Find files in current directory
+- `<leader>fr` - Find recent files
+- `<leader>fs` - Live grep (search in files)
+- `<leader>fc` - Find string under cursor
+
+### Session Management
+- `<leader>wr` - Restore session for current directory
+- `<leader>ws` - Save session
+
+### Markdown
+- `<leader>p` - Toggle markdown preview
+- `<leader>mt` - Toggle Marp
+- `<leader>ms` - Marp status
+
+### Treesitter
+- `<C-space>` - Init/increment selection
+- `<bs>` - Decrement selection
+
+
 ## Plugins
 
 ### colorscheme
