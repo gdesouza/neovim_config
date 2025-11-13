@@ -1,137 +1,95 @@
-# Neovim Configuration
+# neovim_config/
 
-A modern Neovim configuration using Lazy.nvim plugin manager with a focus on productivity and aesthetics.
+<a href="https://dotfyle.com/gdesouza/neovimconfig"><img src="https://dotfyle.com/gdesouza/neovimconfig/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/gdesouza/neovimconfig"><img src="https://dotfyle.com/gdesouza/neovimconfig/badges/leaderkey?style=flat" /></a>
+<a href="https://dotfyle.com/gdesouza/neovimconfig"><img src="https://dotfyle.com/gdesouza/neovimconfig/badges/plugin-manager?style=flat" /></a>
 
-## Features
 
-- **Package Manager**: Lazy.nvim for fast plugin loading
-- **Colorscheme**: Tokyo Night with custom colors
-- **File Explorer**: Nvim-tree with git integration
-- **Fuzzy Finder**: Telescope with live grep
-- **Syntax Highlighting**: Treesitter with multiple language support
-- **Status Line**: Lualine with custom theme
-- **Session Management**: Auto-session for workspace persistence
-- **Markdown Support**: Preview and Marp presentation support
+## Install Instructions
+
+ > Install requires Neovim 0.9+. Always review the code before installing a configuration.
+
+Clone the repository and install the plugins:
+
+```sh
+git clone git@github.com:gdesouza/neovim_config ~/.config/gdesouza/neovim_config
+```
+
+Open Neovim with this config:
+
+```sh
+NVIM_APPNAME=gdesouza/neovim_config/ nvim
+```
 
 ## Plugins
 
-### Core Plugins
-- **lazy.nvim** - Plugin manager
-- **plenary.nvim** - Lua utility functions
-- **vim-tmux-navigator** - Seamless tmux/vim navigation
+### colorscheme
 
-### UI & Appearance
-- **tokyonight.nvim** - Tokyo Night colorscheme with custom colors
-- **lualine.nvim** - Customizable status line
-- **bufferline.nvim** - Buffer/tab line with slant separators
-- **alpha-nvim** - Start screen with custom ASCII art
-- **dressing.nvim** - Better UI for vim.ui interfaces
-- **nvim-web-devicons** - File type icons
++ [folke/tokyonight.nvim](https://dotfyle.com/plugins/folke/tokyonight.nvim)
++ [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
+### completion
 
-### File Management & Navigation
-- **nvim-tree.lua** - File explorer with git integration
-- **telescope.nvim** - Fuzzy finder for files, grep, and more
-- **telescope-fzf-native.nvim** - FZF sorter for telescope
++ [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
+### editing-support
 
-### Code Features
-- **nvim-treesitter** - Syntax highlighting and code parsing
-- **nvim-ts-autotag** - Auto close/rename HTML tags
-- **which-key.nvim** - Keybinding hints
++ [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
++ [windwp/nvim-ts-autotag](https://dotfyle.com/plugins/windwp/nvim-ts-autotag)
+### file-explorer
 
-### Productivity
-- **auto-session** - Session management
-- **vim-maximizer** - Maximize/minimize splits
-- **markdown-preview.nvim** - Live markdown preview
-- **marp-nvim** - Marp presentation support
++ [nvim-tree/nvim-tree.lua](https://dotfyle.com/plugins/nvim-tree/nvim-tree.lua)
+### fuzzy-finder
 
-## Key Bindings
++ [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+### git
 
-### Leader Key
-- Leader key is set to `<Space>`
++ [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
+### icon
 
-### General
-- `jk` - Exit insert mode
-- `<leader>nh` - Clear search highlights
-- `<leader>+` / `<leader>-` - Increment/decrement numbers
++ [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
+### indent
 
-### Window Management
-- `<leader>sv` - Split window vertically
-- `<leader>sh` - Split window horizontally
-- `<leader>se` - Make splits equal size
-- `<leader>sx` - Close current split
-- `<leader>sm` - Maximize/minimize split
++ [lukas-reineke/indent-blankline.nvim](https://dotfyle.com/plugins/lukas-reineke/indent-blankline.nvim)
+### keybinding
 
-### Tab Management
-- `<leader>to` - Open new tab
-- `<leader>tx` - Close current tab
-- `<leader>tn` / `<leader>tp` - Navigate tabs
-- `<leader>tf` - Open current buffer in new tab
++ [folke/which-key.nvim](https://dotfyle.com/plugins/folke/which-key.nvim)
+### lsp
 
-### File Explorer (Nvim-tree)
-- `<leader>ee` - Toggle file explorer
-- `<leader>ef` - Toggle file explorer on current file
-- `<leader>ec` - Collapse file explorer
-- `<leader>er` - Refresh file explorer
++ [onsails/lspkind.nvim](https://dotfyle.com/plugins/onsails/lspkind.nvim)
+### markdown-and-latex
 
-### Telescope (Fuzzy Finder)
-- `<leader>ff` - Find files in current directory
-- `<leader>fr` - Find recent files
-- `<leader>fs` - Live grep (search in files)
-- `<leader>fc` - Find string under cursor
++ [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
++ [mpas/marp-nvim](https://dotfyle.com/plugins/mpas/marp-nvim)
+### nvim-dev
 
-### Session Management
-- `<leader>wr` - Restore session for current directory
-- `<leader>ws` - Save session
++ [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
+### plugin-manager
 
-### Markdown
-- `<leader>p` - Toggle markdown preview
-- `<leader>mt` - Toggle Marp
-- `<leader>ms` - Marp status
++ [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
+### session
 
-### Treesitter
-- `<C-space>` - Init/increment selection
-- `<bs>` - Decrement selection
++ [rmagatti/auto-session](https://dotfyle.com/plugins/rmagatti/auto-session)
+### snippet
 
-## Configuration Structure
++ [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
++ [rafamadriz/friendly-snippets](https://dotfyle.com/plugins/rafamadriz/friendly-snippets)
+### startup
 
-```
-lua/gusdesouza/
-├── core/
-│   ├── init.lua          # Core module loader
-│   ├── keymaps.lua       # Key mappings
-│   └── options.lua       # Vim options
-├── plugins/
-│   ├── init.lua          # Basic plugins
-│   ├── alpha.lua         # Start screen
-│   ├── auto-session.lua  # Session management
-│   ├── bufferline.lua    # Buffer line
-│   ├── colorscheme.lua   # Color scheme
-│   ├── dressing.lua      # UI improvements
-│   ├── lualine.lua       # Status line
-│   ├── markdown-preview.lua # Markdown preview
-│   ├── marp-nvim.lua     # Marp presentations
-│   ├── nvim-tree.lua     # File explorer
-│   ├── telescope.lua     # Fuzzy finder
-│   ├── treesitter.lua    # Syntax highlighting
-│   ├── vim-maximizer.lua # Split maximizer
-│   └── which-key.lua     # Key hints
-└── lazy.lua              # Plugin manager setup
-```
++ [goolord/alpha-nvim](https://dotfyle.com/plugins/goolord/alpha-nvim)
+### statusline
 
-## Installation
++ [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
+### syntax
 
-1. Backup your existing Neovim configuration
-2. Clone this repository to your Neovim config directory:
-   ```bash
-   git clone <repository-url> ~/.config/nvim
-   ```
-3. Start Neovim - Lazy.nvim will automatically install all plugins
-4. Restart Neovim to ensure all plugins are properly loaded
++ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
+### tabline
 
-## Requirements
++ [akinsho/bufferline.nvim](https://dotfyle.com/plugins/akinsho/bufferline.nvim)
+### utility
 
-- Neovim >= 0.8.0
-- Git
-- Node.js and yarn (for markdown-preview)
-- A Nerd Font for proper icons display
-- Ripgrep for telescope live_grep functionality
++ [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
+## Language Servers
+
++ html
+
+
+ This readme was generated by [Dotfyle](https://dotfyle.com)
