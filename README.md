@@ -4,10 +4,15 @@
 <a href="https://dotfyle.com/gdesouza/neovimconfig"><img src="https://dotfyle.com/gdesouza/neovimconfig/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/gdesouza/neovimconfig"><img src="https://dotfyle.com/gdesouza/neovimconfig/badges/plugin-manager?style=flat" /></a>
 
+## Requirements
+
+- Neovim >= 0.9.0
+- Git
+- Node.js and yarn (for markdown-preview)
+- A Nerd Font for proper icons display
+- Ripgrep for telescope `live_grep` functionality
 
 ## Install Instructions
-
- > Install requires Neovim 0.9+. Always review the code before installing a configuration.
 
 Clone the repository and install the plugins:
 
