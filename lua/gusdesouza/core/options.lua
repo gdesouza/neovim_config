@@ -13,7 +13,11 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- line wrapping
+opt.linebreak = true -- wrap on word boundary
+opt.showbreak = "↪ " -- character to show at the start of wrapped lines
+opt.breakindent = true -- maintain indentation on wrapped lines
+
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
