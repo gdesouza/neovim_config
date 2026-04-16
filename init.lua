@@ -1,2 +1,2 @@
 require("gusdesouza.core")
-require("gusdesouza.lazy")
+require("gusdesouza.pack")

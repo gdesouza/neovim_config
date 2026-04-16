@@ -1,3 +1,1 @@
-return {
-    "github/copilot.vim"
-}
+-- copilot.vim initializes automatically when loaded via packadd

@@ -1,4 +1,1 @@
-return {
-  "nvim-lua/plenary.nvim", -- lua functions that many plugins use
-  "christoomey/vim-tmux-navigator", -- tmux & split window navigation
-}
+-- This file is no longer used. Plugin declarations are in pack.lua.
