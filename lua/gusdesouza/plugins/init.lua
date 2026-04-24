@@ -1,1 +1,0 @@
--- This file is no longer used. Plugin declarations are in pack.lua.

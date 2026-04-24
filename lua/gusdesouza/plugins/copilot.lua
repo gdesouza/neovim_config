@@ -1,1 +1,0 @@
--- copilot.vim initializes automatically when loaded via packadd
