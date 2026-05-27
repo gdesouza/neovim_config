@@ -28,10 +28,10 @@ opt.cursorline = true -- highlight the current cursor line
 
 -- appearance
 
--- turn on termguicolors for nightfly colorscheme to work
+-- turn on termguicolors for true-color colorschemes
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
-opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+-- background is left unset so Neovim auto-detects light/dark from the terminal (OSC 11)
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- backspace

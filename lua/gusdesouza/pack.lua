@@ -31,7 +31,7 @@ vim.pack.add({
   { src = "https://github.com/nvim-tree/nvim-web-devicons" },
 
   -- Colorscheme
-  { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
+  { src = "https://github.com/ellisonleao/gruvbox.nvim" },
 
   -- UI
   { src = "https://github.com/akinsho/bufferline.nvim", version = vim.version.range("*") },
@@ -83,8 +83,8 @@ vim.loader.enable()
 -- ── Plugin setup ──────────────────────────────────────────────────────────────
 
 -- Colorscheme
-require("catppuccin").setup()
-vim.cmd([[colorscheme catppuccin]])
+require("gruvbox").setup()
+vim.cmd([[colorscheme gruvbox]])
 
 -- Bufferline
 require("bufferline").setup({
